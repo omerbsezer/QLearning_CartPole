@@ -2,6 +2,8 @@
 "A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The pendulum starts upright, and the goal is to prevent it from falling over by increasing and reducing the cart's velocity."
 
 
+![cartpolegif](https://user-images.githubusercontent.com/10358317/37607967-5a8c36fa-2baa-11e8-8a4f-86e443a66449.gif)
+
 
 
 # QLearning Implementation Using Gym
