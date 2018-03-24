@@ -1,3 +1,4 @@
+# Q-learning is a specific TD (Temporal-difference) algorithm used to learn the Q-function
 # https://en.wikipedia.org/wiki/Inverted_pendulum
 # environment: https://github.com/openai/gym/wiki/CartPole-v0
 # 2 actions: 0:push_left, 1:push_right
@@ -104,6 +105,8 @@ if __name__ == "__main__":
             state = observation_to_state(observation)
             # update the Q table
             # Bellmann eq: Q(s,a)=reward + discount_factor* max(Q(s_,a_))  ::: Q_target = reward+discount_factor*max(Qs_prime)
+            # TD_target=(reward + discount_factor * (best_q)) 
+            # TD_error=(reward + discount_factor * (best_q) - q_table[state_0 + (action,)]) 
             best_q = np.amax(q_table[state])
             q_table[state_0 + (action,)] = q_table[state_0 + (action,)] + learning_rate * (reward + discount_factor * (best_q) - q_table[state_0 + (action,)])
             # setting up for the next iteration
