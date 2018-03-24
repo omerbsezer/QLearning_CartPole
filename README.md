@@ -7,7 +7,7 @@
 
 
 # QLearning Implementation Using Gym
-"QLearning is a model free reinforcement learning technique that can be used to find the optimal action selection policy using Q function without requiring a model of the environment. Q-learning eventually finds an optimal policy"
+"QLearning is a model free reinforcement learning technique that can be used to find the optimal action selection policy using Q function without requiring a model of the environment. Q-learning eventually finds an optimal policy." Q-learning is a specific TD (Temporal-difference) algorithm used to learn the Q-function. If there is no large scale problems like, we can use look up table like in this problem. 
 
 CartPole Results:
 
